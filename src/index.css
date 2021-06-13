@@ -1,13 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Spartan:wght@200&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Spartan", sans-serif;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body h1 {
+  font-family: "Antonio", sans-serif;
+  margin: 0;
+}
+
+body p {
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body a {
+  text-decoration: none;
+}
+::selection {
+  background: #1ec2a4;
 }

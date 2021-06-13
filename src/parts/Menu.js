@@ -5,7 +5,7 @@ import useStyles from "../styles/menu-style";
 
 function Menu() {
   const { planets } = useContext(PlanetContext);
-  const {menu} = useStyles();
+  const { menu } = useStyles();
   return (
     <ul className={menu}>
       {planets.map((planet) => {
