@@ -8,7 +8,8 @@ import Image from "./Image";
 function Main() {
   const { planet } = useParams();
   const { findPlanet } = useContext(PlanetContext);
-  const { main, img, info, content, planetName, sourceLink } = useStyles();
+  const { main, img, info, content, planetName, sourceLink, buttons } =
+    useStyles();
   const myPlanet = findPlanet(planet);
   const { name, overview } = myPlanet;
   return (
@@ -22,8 +23,8 @@ function Main() {
         <a href={`${overview.source}`} className={sourceLink}>
           Source: <span>Wikipedia</span>
         </a>
-        <div>
-          <Buttons />
+        <div className={buttons}>
+          <Buttons planetName={name} />
         </div>
       </div>
     </section>
