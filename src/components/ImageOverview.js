@@ -7,7 +7,7 @@ import ImgSaturn from "../assets/planet-saturn.svg";
 import ImgUranus from "../assets/planet-uranus.svg";
 import ImgNeptune from "../assets/planet-neptune.svg";
 
-function Image({ planetName }) {
+function ImageOverview({ planetName }) {
   let myImg;
 
   const checkImage = () => {
@@ -35,4 +35,4 @@ function Image({ planetName }) {
   return <img src={myImg} alt={`${planetName} surface`} />;
 }
 
-export default Image;
+export default ImageOverview;

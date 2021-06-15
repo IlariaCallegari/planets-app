@@ -35,6 +35,21 @@ const useStyles = createUseStyles({
   buttons: {
     marginTop: "3rem",
   },
+  geologyContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  geologyImg: {
+    width: "200px",
+    height: "auto",
+    transform: "translateY(-50%)",
+  },
+  bigGeologyImg: {
+    width: "200px",
+    height: "auto",
+    transform: "translateY(-100%)",
+  }
 });
 
 export default useStyles;
