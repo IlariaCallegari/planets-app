@@ -1,16 +1,16 @@
 const colors = {
   white: "#fff",
   darkBlue: "#070724",
-  lightBlue: "#2d68f0",
-  darkGreen: "#419ebb",
-  lightGreen: "#1ec2a4",
+  uranus: "#2d68f0",
+  mercury: "#419ebb",
+  neptune: "#1ec2a4",
   darkGrey: "#38384f",
   lightGrey: "#838391",
-  lightOrange: "#eda249",
-  darkOrange: "#cd5120",
-  violet: "#6f2ed6",
-  lightRed: "#d14c32",
-  darkRed: "#d83a3a",
+  venus: "#eda249",
+  saturn: "#cd5120",
+  earth: "#6f2ed6",
+  mars: "#d14c32",
+  jupiter: "#d83a34",
 };
 
 export default colors;

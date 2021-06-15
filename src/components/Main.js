@@ -63,6 +63,9 @@ function Main() {
             handleStructure={handleStructure}
             handleOverview={handleOverview}
             handleGeology={handleGeology}
+            overview={overview}
+            structure={structure}
+            geology={geology}
           />
         </div>
       </div>
