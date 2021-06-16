@@ -17,6 +17,7 @@
     "revolution": "87.97 Days",
     "radius": "2,439.7 KM",
     "temperature": "430°c",
+    "color": "#419ebb",
     "images": {
       "planet": "../src/assets/planet-mercury.svg",
       "internal": "../assets/planet-mercury-internal.svg",
