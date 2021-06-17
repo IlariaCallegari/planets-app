@@ -37,7 +37,11 @@ function ImageGeology({ planetName }) {
     <img
       src={myImg}
       alt={`${planetName} geology`}
-      className={planetName === "Saturn" ? bigGeologyImg : geologyImg}
+      className={
+        planetName === "Jupiter" || planetName === "Saturn"
+          ? bigGeologyImg
+          : geologyImg
+      }
     />
   );
 }

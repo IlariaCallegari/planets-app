@@ -3,14 +3,19 @@ import { PlanetContext } from "../contexts/PlanetContext";
 import { Link } from "react-router-dom";
 import useStyles from "../styles/menu-style";
 
-function Menu() {
+function Menu({ handleOverview }) {
   const { planets } = useContext(PlanetContext);
   const { menu } = useStyles();
+
+  const handleClick = () => {
+    handleOverview();
+  };
+
   return (
     <ul className={menu}>
       {planets.map((planet) => {
         return (
-          <Link to={`/${planet.name}`} key={planet.name}>
+          <Link to={`/${planet.name}`} key={planet.name} onClick={handleClick}>
             <li>{planet.name}</li>
           </Link>
         );

@@ -2,10 +2,12 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   main: {
-    display: "flex",
     width: "80%",
     margin: "0 auto",
     paddingTop: "5rem",
+  },
+  container: {
+    display: "flex",
   },
   img: {
     width: "70%",
@@ -49,7 +51,7 @@ const useStyles = createUseStyles({
     width: "200px",
     height: "auto",
     transform: "translateY(-100%)",
-  }
+  },
 });
 
 export default useStyles;
