@@ -18,7 +18,7 @@ function Main() {
   //find planet
   const { findPlanet } = useContext(PlanetContext);
   const myPlanet = findPlanet(planet);
-  const { name, overview, structure, geology } = myPlanet;
+  const { name, overview, structure, geology, color } = myPlanet;
 
   //styles
   const { main, img, info, content, planetName, buttons, geologyContainer } =
@@ -63,6 +63,8 @@ function Main() {
             handleStructure={handleStructure}
             handleOverview={handleOverview}
             handleGeology={handleGeology}
+            view={view}
+            color={color}
           />
         </div>
       </div>

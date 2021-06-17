@@ -38,6 +38,7 @@
       "content": "Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.",
       "source": "https://en.wikipedia.org/wiki/Venus#Surface_geology"
     },
+    "color": "#eda249",
     "rotation": "243 Days",
     "revolution": "224.7 Days",
     "radius": "6,051.8 KM",
@@ -62,6 +63,7 @@
       "content": "The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.",
       "source": "https://en.wikipedia.org/wiki/Earth#Surface"
     },
+    "color": "#6f2ed6",
     "rotation": "0.99 Days",
     "revolution": "365.26 Days",
     "radius": "6,371 KM",
@@ -86,6 +88,7 @@
       "content": "Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.",
       "source": "https://en.wikipedia.org/wiki/Mars#Surface_geology"
     },
+    "color": "#d14c32",
     "rotation": "1.03 Days",
     "revolution": "1.88 Years",
     "radius": "3,389.5 KM",
@@ -110,6 +113,7 @@
       "content": "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.",
       "source": "https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices"
     },
+    "color": "#d83a34",
     "rotation": "9.93 Hours",
     "revolution": "11.86 Years",
     "radius": "69,911 KM",
@@ -134,6 +138,7 @@
       "content": "The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust.",
       "source": "https://en.wikipedia.org/wiki/Saturn#Atmosphere"
     },
+    "color": "#cd5120",
     "rotation": "10.8 Hours",
     "revolution": "29.46 Years",
     "radius": "58,232 KM",
@@ -158,6 +163,7 @@
       "content": "The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.",
       "source": "https://en.wikipedia.org/wiki/Uranus#Atmosphere"
     },
+    "color": "#2d68f0",
     "rotation": "17.2 Hours",
     "revolution": "84 Years",
     "radius": "25,362 KM",
@@ -182,6 +188,7 @@
       "content": "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
       "source": "https://en.wikipedia.org/wiki/Neptune#Atmosphere"
     },
+    "color": "#1ec2a4",
     "rotation": "16.08 Hours",
     "revolution": "164.79 Years",
     "radius": "24,622 KM",

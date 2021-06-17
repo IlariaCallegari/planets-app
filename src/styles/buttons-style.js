@@ -5,7 +5,6 @@ const useStyles = createUseStyles({
   button: {
     width: "100%",
     textAlign: "left",
-    background: "transparent",
     border: "1px solid rgba(255,255,255, 0.3)",
     padding: "1rem",
     color: colors.white,
@@ -23,6 +22,15 @@ const useStyles = createUseStyles({
       background: colors.mercury,
     },
   },
+  overview: ({ view, color }) => ({
+    background: view === "overview" ? color : "transparent",
+  }),
+  structure: ({ view, color }) => ({
+    background: view === "structure" ? color : "transparent",
+  }),
+  geology: ({ view, color }) => ({
+    background: view === "geology" ? color : "transparent",
+  }),
 });
 
 export default useStyles;
