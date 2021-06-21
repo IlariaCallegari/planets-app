@@ -45,12 +45,12 @@ const useStyles = createUseStyles({
   geologyImg: {
     width: "200px",
     height: "auto",
-    transform: "translateY(-50%)",
+    marginTop: "-8rem",
   },
   bigGeologyImg: {
     width: "200px",
     height: "auto",
-    transform: "translateY(-100%)",
+    marginTop: "-15.5rem",
   },
 });
 

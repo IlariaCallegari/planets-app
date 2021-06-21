@@ -5,7 +5,7 @@ import useStyles from "../styles/menu-style";
 
 function Menu({ handleOverview }) {
   const { planets } = useContext(PlanetContext);
-  const { menu } = useStyles();
+  const { menu, hoverBoard } = useStyles();
 
   const handleClick = () => {
     handleOverview();
@@ -16,7 +16,13 @@ function Menu({ handleOverview }) {
       {planets.map((planet) => {
         return (
           <Link to={`/${planet.name}`} key={planet.name} onClick={handleClick}>
-            <li>{planet.name}</li>
+            <li>
+              <div
+                className={hoverBoard}
+                style={{ backgroundColor: planet.color }}
+              ></div>
+              {planet.name}
+            </li>
           </Link>
         );
       })}

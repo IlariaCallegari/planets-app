@@ -18,9 +18,6 @@ const useStyles = createUseStyles({
     "&:hover": {
       background: colors.darkGrey,
     },
-    "&:active": {
-      background: colors.mercury,
-    },
   },
   overview: ({ view, color }) => ({
     background: view === "overview" ? color : "transparent",
