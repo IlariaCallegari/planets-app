@@ -7,34 +7,31 @@ import ImgSaturn from "../assets/planet-saturn.svg";
 import ImgUranus from "../assets/planet-uranus.svg";
 import ImgNeptune from "../assets/planet-neptune.svg";
 
-function ImageOverview({ planetName, in: inProp }) {
-  let myImg;
+let myImg;
+const checkImage = (planetName) => {
+  if (planetName === "Mercury") {
+    myImg = ImgMercury;
+  } else if (planetName === "Venus") {
+    myImg = ImgVenus;
+  } else if (planetName === "Earth") {
+    myImg = ImgEarth;
+  } else if (planetName === "Mars") {
+    myImg = ImgMars;
+  } else if (planetName === "Jupiter") {
+    myImg = ImgJupiter;
+  } else if (planetName === "Saturn") {
+    myImg = ImgSaturn;
+  } else if (planetName === "Uranus") {
+    myImg = ImgUranus;
+  } else {
+    myImg = ImgNeptune;
+  }
+  return myImg;
+};
+function ImageOverview({ planetName }) {
+  checkImage(planetName);
 
-  const checkImage = () => {
-    if (planetName === "Mercury") {
-      myImg = ImgMercury;
-    } else if (planetName === "Venus") {
-      myImg = ImgVenus;
-    } else if (planetName === "Earth") {
-      myImg = ImgEarth;
-    } else if (planetName === "Mars") {
-      myImg = ImgMars;
-    } else if (planetName === "Jupiter") {
-      myImg = ImgJupiter;
-    } else if (planetName === "Saturn") {
-      myImg = ImgSaturn;
-    } else if (planetName === "Uranus") {
-      myImg = ImgUranus;
-    } else {
-      myImg = ImgNeptune;
-    }
-    return myImg;
-  };
-  checkImage();
-
-  return (
-      <img src={myImg} alt={`${planetName} surface`} />
-  );
+  return <img src={myImg} alt={`${planetName} surface`} />;
 }
 
 export default ImageOverview;

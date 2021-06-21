@@ -1,4 +1,5 @@
 import { createUseStyles } from "react-jss";
+import colors from "../utils/variables";
 
 const useStyles = createUseStyles({
   header: {
@@ -11,6 +12,7 @@ const useStyles = createUseStyles({
   },
   logo: {
     fontSize: "2.5rem",
+    color: colors.white,
   },
 });
 

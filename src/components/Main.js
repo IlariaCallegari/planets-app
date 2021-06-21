@@ -9,7 +9,14 @@ import ImageGeology from "./ImageGeology";
 import Source from "./Source";
 import GeneralData from "./GeneralData";
 
-function Main({ view, handleGeology, handleOverview, handleStructure }) {
+function Main({
+  view,
+  handleGeology,
+  handleOverview,
+  handleStructure,
+  inProp,
+  setInProp,
+}) {
   //params
   const { planet } = useParams();
 
@@ -44,12 +51,26 @@ function Main({ view, handleGeology, handleOverview, handleStructure }) {
     <section className={main}>
       <div className={container}>
         <div className={img}>
-          {view === "overview" && <ImageOverview planetName={name} />}
+          {view === "overview" && (
+            <ImageOverview
+              planetName={name}
+              setInProp={setInProp}
+              inProp={inProp}
+            />
+          )}
           {view === "structure" && <ImageStructure planetName={name} />}
           {view === "geology" && (
             <div className={geologyContainer}>
-              <ImageOverview planetName={name} />
-              <ImageGeology planetName={name} />
+              <ImageOverview
+                planetName={name}
+                setInProp={setInProp}
+                inProp={inProp}
+              />
+              <ImageGeology
+                planetName={name}
+                setInProp={setInProp}
+                inProp={inProp}
+              />
             </div>
           )}
         </div>

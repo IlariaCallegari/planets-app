@@ -7,13 +7,13 @@ const useStyles = createUseStyles({
     "& a": {
       textDecoration: "none !important",
       padding: "0 1.5rem 0 1.5rem",
-      color: colors.lightGrey,
+      color: colors.white,
       transition: "0.3s ease-in",
       "& li": {
         listStyle: "none",
       },
       "&:hover": {
-        color: colors.white,
+        fontWeight:700
       },
       "&:hover div": {
         opacity: 1,
@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
     },
   },
   hoverBoard: {
-    height: "0.1rem",
+    height: "0.2rem",
     width: 0,
     marginBottom: "1rem",
     opacity: 0,

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./parts/Header";
 import Main from "./components/Main";
+import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useStyles from "./styles/app-style";
 
@@ -24,6 +25,7 @@ function App() {
       <div className={app}>
         <Header handleOverview={handleOverview} />
         <Switch>
+          <Route exact path="/" render={() => <Home />} />
           <Route exact path="/:planet">
             <Main
               view={view}

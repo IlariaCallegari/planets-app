@@ -52,6 +52,12 @@ const useStyles = createUseStyles({
     height: "auto",
     marginTop: "-15.5rem",
   },
+  "$img-appear": {
+    opacity: 0
+  },
+  "$img-enter": {
+    opacity: 0
+  }
 });
 
 export default useStyles;

@@ -1,11 +1,14 @@
 import Menu from "./Menu";
+import { NavLink } from "react-router-dom";
 import useStyles from "../styles/header-style";
 
 function Header({ handleOverview }) {
   const { header, logo } = useStyles();
   return (
     <nav className={header}>
-      <h1 className={logo}>The Planets</h1>
+      <NavLink to="/">
+        <h1 className={logo}>The Planets</h1>
+      </NavLink>
       <Menu handleOverview={handleOverview} />
     </nav>
   );

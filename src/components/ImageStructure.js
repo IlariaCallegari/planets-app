@@ -7,30 +7,30 @@ import ImgSaturnStructure from "../assets/planet-saturn-internal.svg";
 import ImgUranusStructure from "../assets/planet-uranus-internal.svg";
 import ImgNeptuneStructure from "../assets/planet-neptune-internal.svg";
 
-function ImageStructure({ planetName }) {
-  let myImg;
+let myImg;
+const checkImage = (planetName) => {
+  if (planetName === "Mercury") {
+    myImg = ImgMercuryStructure;
+  } else if (planetName === "Venus") {
+    myImg = ImgVenusStructure;
+  } else if (planetName === "Earth") {
+    myImg = ImgEarthStructure;
+  } else if (planetName === "Mars") {
+    myImg = ImgMarsStructure;
+  } else if (planetName === "Jupiter") {
+    myImg = ImgJupiterStructure;
+  } else if (planetName === "Saturn") {
+    myImg = ImgSaturnStructure;
+  } else if (planetName === "Uranus") {
+    myImg = ImgUranusStructure;
+  } else {
+    myImg = ImgNeptuneStructure;
+  }
+  return myImg;
+};
 
-  const checkImage = () => {
-    if (planetName === "Mercury") {
-      myImg = ImgMercuryStructure;
-    } else if (planetName === "Venus") {
-      myImg = ImgVenusStructure;
-    } else if (planetName === "Earth") {
-      myImg = ImgEarthStructure;
-    } else if (planetName === "Mars") {
-      myImg = ImgMarsStructure;
-    } else if (planetName === "Jupiter") {
-      myImg = ImgJupiterStructure;
-    } else if (planetName === "Saturn") {
-      myImg = ImgSaturnStructure;
-    } else if (planetName === "Uranus") {
-      myImg = ImgUranusStructure;
-    } else {
-      myImg = ImgNeptuneStructure;
-    }
-    return myImg;
-  };
-  checkImage();
+function ImageStructure({ planetName }) {
+  checkImage(planetName);
 
   return <img src={myImg} alt={`${planetName} internal structure`} />;
 }
