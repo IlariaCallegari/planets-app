@@ -23,10 +23,10 @@ function App() {
   return (
     <Router>
       <div className={app}>
-        <Header handleOverview={handleOverview} />
         <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/:planet">
+            <Header handleOverview={handleOverview} />
             <Main
               view={view}
               handleOverview={handleOverview}

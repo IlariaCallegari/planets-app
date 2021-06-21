@@ -3,11 +3,15 @@ import colors from "../utils/variables";
 
 const useStyles = createUseStyles({
   homeContainer: {
-    height: "calc(100vh - 120px)",
-    margin: 0,
+    height: "100vh",
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+  },
+  logo: {
+    fontSize: "5rem",
+    textTransform: "uppercase",
   },
   enterBtn: {
     color: colors.white,
@@ -33,12 +37,6 @@ const useStyles = createUseStyles({
 
       opacity: 1,
     },
-    // "&:hover": {
-    //   backgroundColor: colors.darkGrey,
-    // },
-    // "&:active": {
-    //   backgroundColor: "#1ec2a4",
-    // },
   },
   "@keyframes flicker": {
     " 0%, 18%, 22%, 25%, 53%, 57%, 100%": {
