@@ -40,6 +40,7 @@ function Main({
     main,
     container,
     img,
+    infoSide,
     info,
     content,
     planetName,
@@ -74,19 +75,23 @@ function Main({
             </div>
           )}
         </div>
-        <div className={info}>
-          <h1 className={planetName}>{name}</h1>
-          {view === "overview" && <p className={content}>{overview.content}</p>}
-          {view === "structure" && (
-            <p className={content}>{structure.content}</p>
-          )}
-          {view === "geology" && <p className={content}>{geology.content}</p>}
-          <Source
-            view={view}
-            overview={overview}
-            structure={structure}
-            geology={geology}
-          />
+        <div className={infoSide}>
+          <div className={info}>
+            <h1 className={planetName}>{name}</h1>
+            {view === "overview" && (
+              <p className={content}>{overview.content}</p>
+            )}
+            {view === "structure" && (
+              <p className={content}>{structure.content}</p>
+            )}
+            {view === "geology" && <p className={content}>{geology.content}</p>}
+            <Source
+              view={view}
+              overview={overview}
+              structure={structure}
+              geology={geology}
+            />
+          </div>
           <div className={buttons}>
             <Buttons
               handleStructure={handleStructure}

@@ -1,5 +1,6 @@
 import { createUseStyles } from "react-jss";
 import colors from "../utils/variables";
+import sizes from "../utils/breakpoints";
 
 const useStyles = createUseStyles({
   homeContainer: {
@@ -12,6 +13,15 @@ const useStyles = createUseStyles({
   logo: {
     fontSize: "5rem",
     textTransform: "uppercase",
+    [sizes.down("mobileLg")]: {
+      fontSize: "4.5rem",
+    },
+    [sizes.down("mobileMd")]: {
+      fontSize: "4rem",
+    },
+    [sizes.down("mobileSm")]: {
+      fontSize: "3.5rem",
+    },
   },
   enterBtn: {
     color: colors.white,
@@ -23,6 +33,16 @@ const useStyles = createUseStyles({
     animation: "$flicker 2s ease-in infinite",
     fontWeight: 700,
     fontSize: "1.5rem",
+    [sizes.down("mobileLg")]: {
+      fontSize: "1.25rem",
+    },
+    [sizes.down("mobileMd")]: {
+      fontSize: "1.1rem",
+    },
+    [sizes.down("mobileSm")]: {
+      fontSize: "0.9rem",
+      letterSpacing: "1px"
+    },
     "& div": {
       marginTop: "1.5rem",
       height: "3px",

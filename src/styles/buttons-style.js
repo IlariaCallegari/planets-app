@@ -1,5 +1,6 @@
 import { createUseStyles } from "react-jss";
 import colors from "../utils/variables";
+import sizes from "../utils/breakpoints";
 
 const useStyles = createUseStyles({
   button: {
@@ -12,8 +13,14 @@ const useStyles = createUseStyles({
     textTransform: "uppercase",
     cursor: "pointer",
     transition: "0.3s ease-in",
+    [sizes.down("laptopSm")]: {
+      padding: "0.8rem",
+    },
     "& span": {
       padding: "0.5rem 1.5rem",
+      [sizes.down("laptopSm")]: {
+        padding: "0.5rem 0.8rem",
+      }
     },
     "&:hover": {
       background: colors.darkGrey,
