@@ -14,8 +14,6 @@ function Main({
   handleGeology,
   handleOverview,
   handleStructure,
-  inProp,
-  setInProp,
 }) {
   //params
   const { planet } = useParams();
@@ -39,7 +37,7 @@ function Main({
   const {
     main,
     container,
-    img,
+    imgContainer,
     infoSide,
     info,
     content,
@@ -51,12 +49,10 @@ function Main({
   return (
     <section className={main}>
       <div className={container}>
-        <div className={img}>
+        <div className={imgContainer}>
           {view === "overview" && (
             <ImageOverview
               planetName={name}
-              setInProp={setInProp}
-              inProp={inProp}
             />
           )}
           {view === "structure" && <ImageStructure planetName={name} />}
@@ -64,13 +60,9 @@ function Main({
             <div className={geologyContainer}>
               <ImageOverview
                 planetName={name}
-                setInProp={setInProp}
-                inProp={inProp}
               />
               <ImageGeology
                 planetName={name}
-                setInProp={setInProp}
-                inProp={inProp}
               />
             </div>
           )}

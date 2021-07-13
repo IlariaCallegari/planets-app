@@ -6,6 +6,7 @@ import ImgJupiterStructure from "../assets/planet-jupiter-internal.svg";
 import ImgSaturnStructure from "../assets/planet-saturn-internal.svg";
 import ImgUranusStructure from "../assets/planet-uranus-internal.svg";
 import ImgNeptuneStructure from "../assets/planet-neptune-internal.svg";
+import useStyles from "../styles/main-style";
 
 let myImg;
 const checkImage = (planetName) => {
@@ -30,9 +31,16 @@ const checkImage = (planetName) => {
 };
 
 function ImageStructure({ planetName }) {
+  const { img } = useStyles();
   checkImage(planetName);
 
-  return <img src={myImg} alt={`${planetName} internal structure`} />;
+  return (
+    <img
+      className={img}
+      src={myImg}
+      alt={`${planetName} internal structure`}
+    />
+  );
 }
 
 export default ImageStructure;

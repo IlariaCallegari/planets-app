@@ -5,7 +5,7 @@ const PlanetContext = createContext();
 
 function PlanetProvider(props) {
   const [planets, setPlanets, fetchPlanets] = useFetch();
-
+  
   useEffect(() => {
     fetchPlanets();
   }, [fetchPlanets]);

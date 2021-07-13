@@ -8,17 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body h1 {
+h1 {
   font-family: "Antonio", sans-serif;
   margin: 0;
 }
 
-body p {
+p {
   font-size: 0.875rem;
   line-height: 1.5625rem;
 }
-body a {
+a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: white; 
 }
 ::selection {
   background: #1ec2a4;

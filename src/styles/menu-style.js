@@ -9,6 +9,9 @@ const useStyles = createUseStyles({
       justifyContent: "center",
       paddingLeft: 0,
     },
+    [sizes.down("mobileLg")]: {
+      display: "none",
+    },
     "& a": {
       textDecoration: "none !important",
       padding: "0 1.5rem 0 1.5rem",
@@ -38,6 +41,11 @@ const useStyles = createUseStyles({
     width: 0,
     marginBottom: "1rem",
     opacity: 0,
+  },
+  hamburgerMenu: {
+    [sizes.up("mobileLg")]: {
+      display: "none",
+    },
   },
 });
 

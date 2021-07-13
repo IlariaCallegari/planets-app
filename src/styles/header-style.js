@@ -13,6 +13,9 @@ const useStyles = createUseStyles({
     [sizes.down("tablet")]: {
       flexDirection: "column",
     },
+    [sizes.down("mobileLg")]:{
+      flexDirection: "row"
+    }
   },
   logo: {
     fontSize: "2.5rem",

@@ -1,11 +1,13 @@
 import { useState } from "react";
-import Header from "./parts/Header";
+import Header from "./components/Header";
 import Main from "./components/Main";
 import Home from "./pages/Home";
+import MobileMenu from "./components/MobileMenu";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import useStyles from "./styles/app-style";
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [view, setView] = useState("overview");
   const { app } = useStyles();
 
@@ -19,6 +21,12 @@ function App() {
   const handleGeology = () => {
     setView("geology");
   };
+  const handleToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+  const handleClose = () => {
+    setIsMobileMenuOpen(false)
+  }
 
   return (
     <Router>
@@ -26,13 +34,20 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/:planet">
-            <Header handleOverview={handleOverview} />
-            <Main
-              view={view}
+            <Header
               handleOverview={handleOverview}
-              handleStructure={handleStructure}
-              handleGeology={handleGeology}
+              handleToggle={handleToggle}
             />
+            {!isMobileMenuOpen ? (
+              <Main
+                view={view}
+                handleOverview={handleOverview}
+                handleStructure={handleStructure}
+                handleGeology={handleGeology}
+              />
+            ) : (
+              <MobileMenu handleClose={handleClose}/>
+            )}
           </Route>
         </Switch>
       </div>

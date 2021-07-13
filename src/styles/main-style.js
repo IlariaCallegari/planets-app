@@ -9,6 +9,9 @@ const useStyles = createUseStyles({
     [sizes.down("laptopSm")]: {
       width: "90%",
     },
+    [sizes.down("mobileLg")]: {
+      width: "100%"
+    }
   },
   container: {
     display: "flex",
@@ -17,11 +20,16 @@ const useStyles = createUseStyles({
       alignItems: "center",
     },
   },
-  img: {
+  imgContainer: {
     width: "65%",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+  },
+  img: {
+    [sizes.down("mobileLg")]: {
+      width: "200px",
+    },
   },
   infoSide: {
     width: "35%",
@@ -30,12 +38,21 @@ const useStyles = createUseStyles({
       display: "flex",
       marginTop: "4rem",
       justifyContent: "space-between",
-      alignItems: "center"
+      alignItems: "center",
+    },
+    [sizes.down("mobileLg")]: {
+      display: "flex",
+      flexDirection: "column",
     },
   },
   info: {
     [sizes.down("tablet")]: {
       width: "45%",
+    },
+    [sizes.down("mobileLg")]: {
+      width: "80%",
+      margin: "0 auto",
+      textAlign: "center"
     },
   },
   planetName: {
@@ -48,6 +65,9 @@ const useStyles = createUseStyles({
     },
     [sizes.down("tablet")]: {
       marginTop: 0,
+    },
+    [sizes.down("mobileLg")]: {
+      fontSize: "2.5rem",
     },
   },
   content: {
@@ -64,7 +84,10 @@ const useStyles = createUseStyles({
     marginTop: "3rem",
     [sizes.down("tablet")]: {
       marginTop: 0,
-      width: "45%"
+      width: "45%",
+    },
+    [sizes.down("mobileLg")]: {
+      display: "none",
     },
   },
   geologyContainer: {

@@ -7,6 +7,7 @@ import ImgSaturnGeology from "../assets/geology-saturn.png";
 import ImgUranusGeology from "../assets/geology-uranus.png";
 import ImgNeptuneGeology from "../assets/geology-neptune.png";
 import useStyles from "../styles/main-style";
+import classNames from "classnames";
 
 let myImg;
 const checkImage = (planetName) => {
@@ -31,7 +32,7 @@ const checkImage = (planetName) => {
 };
 
 function ImageGeology({ planetName }) {
-  const { geologyImg, bigGeologyImg } = useStyles();
+  const { geologyImg, bigGeologyImg, img } = useStyles();
   
   checkImage(planetName);
 
@@ -39,11 +40,14 @@ function ImageGeology({ planetName }) {
     <img
       src={myImg}
       alt={`${planetName} geology`}
-      className={
-        planetName === "Jupiter" || planetName === "Saturn"
+      className={classNames(img, planetName === "Jupiter" || planetName === "Saturn"
           ? bigGeologyImg
-          : geologyImg
-      }
+          : geologyImg)}
+      // className={
+      //   planetName === "Jupiter" || planetName === "Saturn"
+      //     ? bigGeologyImg
+      //     : geologyImg
+      // }
     />
   );
 }

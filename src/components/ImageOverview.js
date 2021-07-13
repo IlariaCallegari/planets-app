@@ -6,6 +6,7 @@ import ImgJupiter from "../assets/planet-jupiter.svg";
 import ImgSaturn from "../assets/planet-saturn.svg";
 import ImgUranus from "../assets/planet-uranus.svg";
 import ImgNeptune from "../assets/planet-neptune.svg";
+import useStyles from "../styles/main-style";
 
 let myImg;
 const checkImage = (planetName) => {
@@ -29,9 +30,10 @@ const checkImage = (planetName) => {
   return myImg;
 };
 function ImageOverview({ planetName }) {
+  const {img} = useStyles()
   checkImage(planetName);
 
-  return <img src={myImg} alt={`${planetName} surface`} />;
+  return <img className={img} src={myImg} alt={`${planetName} surface`} />;
 }
 
 export default ImageOverview;
