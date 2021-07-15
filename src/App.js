@@ -37,6 +37,7 @@ function App() {
             <Header
               handleOverview={handleOverview}
               handleToggle={handleToggle}
+              isMobileMenuOpen={isMobileMenuOpen}
             />
             {!isMobileMenuOpen ? (
               <Main

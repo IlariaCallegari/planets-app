@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
 import useStyles from "../styles/menu-style";
 
-function Menu({ handleOverview, handleToggle }) {
+function Menu({ handleOverview, handleToggle, isMobileMenuOpen }) {
   const { planets } = useContext(PlanetContext);
   const { menu, hoverBoard } = useStyles();
 
@@ -14,7 +14,7 @@ function Menu({ handleOverview, handleToggle }) {
   };
 
   return (
-    <React.Fragment>
+    <nav>
       <ul className={menu}>
         {planets.map((planet) => {
           return (
@@ -34,8 +34,11 @@ function Menu({ handleOverview, handleToggle }) {
           );
         })}
       </ul>
-      <HamburgerMenu handleToggle={handleToggle} />
-    </React.Fragment>
+      <HamburgerMenu
+        handleToggle={handleToggle}
+        isMobileMenuOpen={isMobileMenuOpen}
+      />
+    </nav>
   );
 }
 

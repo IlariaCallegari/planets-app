@@ -42,10 +42,15 @@ const useStyles = createUseStyles({
     marginBottom: "1rem",
     opacity: 0,
   },
-  hamburgerMenu: {
-    [sizes.up("mobileLg")]: {
-      display: "none",
+  hamburgerMenu: (isMobileMenuOpen) => ({
+    "& g": {
+      fill: isMobileMenuOpen ? "rgba(255,255,255, 0.5)" : colors.white,
     },
+  }),
+  [sizes.up("mobileLg")]: {
+    hamburgerMenu: (isMobileMenuOpen) => ({
+      display: "none",
+    }),
   },
 });
 

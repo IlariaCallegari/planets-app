@@ -1,3 +1,4 @@
+import React from "react"
 import useStyles from "../styles/buttons-style.js";
 import classNames from "classnames";
 
@@ -10,7 +11,7 @@ function Buttons({
 }) {
   const { button, overview, structure, geology } = useStyles({view, color});
   return (
-    <>
+    <React.Fragment>
       <button className={classNames(button, overview)} onClick={handleOverview}>
         <span>01</span>
         <span>Overwiew</span>
@@ -26,7 +27,7 @@ function Buttons({
         <span>03</span>
         <span>Surface geology</span>
       </button>
-    </>
+    </React.Fragment>
   );
 }
 

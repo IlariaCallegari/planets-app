@@ -10,8 +10,8 @@ const useStyles = createUseStyles({
       width: "90%",
     },
     [sizes.down("mobileLg")]: {
-      width: "100%"
-    }
+      width: "100%",
+    },
   },
   container: {
     display: "flex",
@@ -52,7 +52,7 @@ const useStyles = createUseStyles({
     [sizes.down("mobileLg")]: {
       width: "80%",
       margin: "0 auto",
-      textAlign: "center"
+      textAlign: "center",
     },
   },
   planetName: {
@@ -99,11 +99,17 @@ const useStyles = createUseStyles({
     width: "200px",
     height: "auto",
     marginTop: "-8rem",
+    [sizes.down("mobileLg")]: {
+      width: "100px",
+    },
   },
   bigGeologyImg: {
     width: "200px",
     height: "auto",
     marginTop: "-15.5rem",
+    [sizes.down("mobileLg")]: {
+      width: "100px",
+    },
   },
 });
 

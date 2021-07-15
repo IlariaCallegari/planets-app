@@ -2,16 +2,20 @@ import Menu from "./Menu";
 import { NavLink } from "react-router-dom";
 import useStyles from "../styles/header-style";
 
-function Header({ handleOverview, handleToggle }) {
+function Header({ handleOverview, handleToggle, isMobileMenuOpen }) {
   const { header, logo } = useStyles();
 
   return (
-    <nav className={header}>
+    <div className={header}>
       <NavLink to="/">
         <h1 className={logo}>The Planets</h1>
       </NavLink>
-      <Menu handleOverview={handleOverview} handleToggle={handleToggle} />
-    </nav>
+      <Menu
+        handleOverview={handleOverview}
+        handleToggle={handleToggle}
+        isMobileMenuOpen={isMobileMenuOpen}
+      />
+    </div>
   );
 }
 
