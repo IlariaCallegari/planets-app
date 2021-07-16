@@ -24,13 +24,9 @@ function App() {
   const handleToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-  const handleClose = () => {
-    setIsMobileMenuOpen(false);
-    handleOverview();
-  };
   const resetApp = () => {
+    setIsMobileMenuOpen(false)
     handleOverview();
-    handleClose();
   };
 
   return (
@@ -52,7 +48,7 @@ function App() {
                 handleGeology={handleGeology}
               />
             ) : (
-              <MobileMenu handleClose={handleClose} />
+              <MobileMenu resetApp={resetApp} />
             )}
           </Route>
         </Switch>

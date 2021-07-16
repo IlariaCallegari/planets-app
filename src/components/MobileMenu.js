@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import Chevron from "../assets/icon-chevron.svg";
 import useStyles from "../styles/mobileMenu-style";
 
-function MobileMenu({ handleClose }) {
+function MobileMenu({ resetApp }) {
   const { planets } = useContext(PlanetContext);
   const { mobileMenu, circle, link } = useStyles();
   return (
@@ -15,7 +15,7 @@ function MobileMenu({ handleClose }) {
             <NavLink
               to={`/${planet.name}`}
               key={planet.name}
-              onClick={handleClose}
+              onClick={resetApp}
               className={link}
             >
               <li>
