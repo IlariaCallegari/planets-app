@@ -109,6 +109,7 @@ const useStyles = createUseStyles({
     marginTop: "-15.5rem",
     [sizes.down("mobileLg")]: {
       width: "100px",
+      marginTop: "-8rem",
     },
   },
 });

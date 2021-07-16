@@ -12,21 +12,21 @@ function MobileMenu({ handleClose }) {
       <ul className={mobileMenu}>
         {planets.map((planet) => {
           return (
-              <NavLink
-                to={`/${planet.name}`}
-                key={planet.name}
-                onClick={handleClose}
-                className={link}
-              >
-                <li>
-                  <span
-                    className={circle}
-                    style={{ backgroundColor: planet.color }}
-                  ></span>
-                  {planet.name}
-                </li>
-                <img src={Chevron} alt="chevron right" />
-              </NavLink>
+            <NavLink
+              to={`/${planet.name}`}
+              key={planet.name}
+              onClick={handleClose}
+              className={link}
+            >
+              <li>
+                <span
+                  className={circle}
+                  style={{ backgroundColor: planet.color }}
+                ></span>
+                {planet.name}
+              </li>
+              <img src={Chevron} alt="chevron right" />
+            </NavLink>
           );
         })}
       </ul>

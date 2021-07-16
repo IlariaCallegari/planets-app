@@ -27,6 +27,7 @@ const useStyles = createUseStyles({
     textTransform: "uppercase",
     padding: "1.25rem 0",
     border: "none",
+    transition: "all 0.3s ease-in",
     "&:hover": {
       color: colors.white,
     },
@@ -38,7 +39,7 @@ const useStyles = createUseStyles({
   },
   overview: ({ view, color }) => ({
     "& button": {
-      color: view === "overview" && colors.white, 
+      color: view === "overview" ? colors.white : colors.lightGrey,
     },
     "& div": {
       width: "100%",
@@ -48,7 +49,7 @@ const useStyles = createUseStyles({
   }),
   structure: ({ view, color }) => ({
     "& button": {
-      color: view === "structure" && colors.white, 
+      color: view === "structure" ? colors.white : colors.lightGrey,
     },
     "& div": {
       background: view === "structure" ? color : "transparent",
@@ -58,7 +59,7 @@ const useStyles = createUseStyles({
   }),
   geology: ({ view, color }) => ({
     "& button": {
-      color: view === "geology" && colors.white, 
+      color: view === "geology" ? colors.white : colors.lightGrey,
     },
     "& div": {
       background: view === "geology" ? color : "transparent",
