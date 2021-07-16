@@ -25,14 +25,19 @@ function App() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   const handleClose = () => {
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+    handleOverview();
+  };
+  const resetApp = () => {
+    handleOverview();
+    handleClose();
+  };
 
   return (
     <Router>
       <div className={app}>
         <Switch>
-          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/" render={() => <Home resetApp={resetApp} />} />
           <Route exact path="/:planet">
             <Header
               handleOverview={handleOverview}
@@ -47,7 +52,7 @@ function App() {
                 handleGeology={handleGeology}
               />
             ) : (
-              <MobileMenu handleClose={handleClose}/>
+              <MobileMenu handleClose={handleClose} />
             )}
           </Route>
         </Switch>
