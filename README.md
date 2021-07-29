@@ -44,7 +44,8 @@ Users should be able to:
 
 ### Continued development
 
-During this challenge I've realised I need to focus more in understanding how to use React's costum hooks in more efficiently.
+While coding this challenge, I've niticed I need to focus more in understanding how to use React's costum hooks more efficiently.
+I also need to think in advance how to structure the HTML template, to make the app responsive quicker. I also need to focus more in planning in advance how I will stucture the code - i.e. how to best use the state hook API- to make the writing process quicker and efficient.
 
 
 ## Author
