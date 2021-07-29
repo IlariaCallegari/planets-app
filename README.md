@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://planets-app.vercel.app/)
+- Live Site URL: [Planet App](https://planets-app.vercel.app/)
 
 ## My process
 
@@ -44,10 +44,10 @@ Users should be able to:
 
 ### Continued development
 
-During this challenge I've realised I need to focus more in understanding how to use React's costum hooks in a more efficiently.
+During this challenge I've realised I need to focus more in understanding how to use React's costum hooks in more efficiently.
 
 
 ## Author
 
 - Website - [Ilaria Callegari](https://www.ilariacallegari.com)
-- Github - [@](https://github.com/IlariaCallegari)
+- Github - [@ilariacallegari](https://github.com/IlariaCallegari)
