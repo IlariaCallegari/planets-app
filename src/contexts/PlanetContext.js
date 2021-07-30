@@ -4,13 +4,14 @@ import useFetch from "../hooks/useFetch";
 const PlanetContext = createContext();
 
 function PlanetProvider(props) {
-  const [planets, setPlanets, planetName, fetchPlanets] = useFetch();
+  const [planets, setPlanets, planetName, setPlanetName, fetchPlanets] = useFetch();
   
   useEffect(() => {
     fetchPlanets();
   }, [planetName]);
 
   const findPlanet = (param) => {
+    setPlanetName(param)
     return planets.find((planet) => planet.name === param);
   };
 

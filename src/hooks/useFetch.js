@@ -1,14 +1,18 @@
 import { useState } from "react";
-import getData from "../services/getData";
 
 const useFetch = () => {
   const [planets, setPlanets] = useState([]);
-  const [planetName, setPlanetName] = useState("Mercury")
+  const [planetName, setPlanetName] = useState("Mercury");
 
-  const fetchPlanets = () => {
-    getData()
+  const fetchPlanets = async () => {
+    await fetch("data.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("Network response error");
+        return res.json();
+      })
       .then((res) => {
         setPlanets(res);
+        console.log(planets);
       })
       .catch((err) => console.log(err));
   };
