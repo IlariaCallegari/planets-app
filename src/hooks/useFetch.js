@@ -3,6 +3,7 @@ import getData from "../services/getData";
 
 const useFetch = () => {
   const [planets, setPlanets] = useState([]);
+  const [planetName, setPlanetName] = useState("Mercury")
 
   const fetchPlanets = () => {
     getData()
@@ -12,7 +13,7 @@ const useFetch = () => {
       .catch((err) => console.log(err));
   };
 
-  return [planets, setPlanets, fetchPlanets];
+  return [planets, setPlanets, planetName, setPlanetName, fetchPlanets];
 };
 
 export default useFetch;
