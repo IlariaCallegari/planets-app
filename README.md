@@ -1,7 +1,5 @@
 # Frontend Mentor - Planets fact site solution
 
-This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f).
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -44,8 +42,9 @@ Users should be able to:
 
 ### Continued development
 
-Whilst developing this project, I've realised I need to focus more in understanding how to use React's costum hooks more efficiently.
+While coding this project, I've noticed I need to focus more in understanding how to make use of React's costum hooks more efficiently.
 
+Also spending more time planning in advance how I will stucture the code - i.e. how to best use the state hook API, how to best structure the HTML markup - to make the writing process quicker and more efficient would be beneficial.
 
 ## Author
 
