@@ -19,9 +19,9 @@
     "temperature": "430°c",
     "color": "#419ebb",
     "images": {
-      "planet": "../src/assets/planet-mercury.svg",
-      "internal": "../assets/planet-mercury-internal.svg",
-      "geology": "../assets/geology-mercury.png"
+      "planet": "./assets/planet-mercury.svg",
+      "internal": "./assets/planet-mercury-internal.svg",
+      "geology": "./assets/geology-mercury.png"
     }
   },
   {

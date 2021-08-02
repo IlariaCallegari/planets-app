@@ -28,6 +28,7 @@ function Main({ view, handleGeology, handleOverview, handleStructure }) {
     revolution,
     radius,
     temperature,
+    images,
   } = myPlanet;
 
   //styles
@@ -55,12 +56,16 @@ function Main({ view, handleGeology, handleOverview, handleStructure }) {
       <section className={main}>
         <div className={container}>
           <div className={imgContainer}>
-            {view === "overview" && <ImageOverview planetName={name} />}
-            {view === "structure" && <ImageStructure planetName={name} />}
+            {view === "overview" && (
+              <ImageOverview planetName={name} images={images} />
+            )}
+            {view === "structure" && (
+              <ImageStructure planetName={name} images={images} />
+            )}
             {view === "geology" && (
               <div className={geologyContainer}>
-                <ImageOverview planetName={name} />
-                <ImageGeology planetName={name} />
+                <ImageOverview planetName={name} images={images} />
+                <ImageGeology planetName={name} images={images} />
               </div>
             )}
           </div>
