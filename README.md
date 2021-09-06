@@ -33,7 +33,6 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
 - Flexbox
 - Desktop-first workflow
 - [React-router DOM](https://reactrouter.com/)
